@@ -48,7 +48,7 @@ public class GamesDto {
 	public String getGameTime() {
 		return GameTime;
 	}
-
+//
 
 	public void setGameTime(String GameTime) {
 		this.GameTime = GameTime;

@@ -2,10 +2,10 @@ package com.xworkz.Games.Repo;
 
 import java.util.List;
 
-import com.xworkz.Games.GamesDto;
+import com.xworkz.Games.GamesDto;//
 
 public interface GamesRepositary {
-
+//
 	public boolean save(GamesDto dto);
 
 	public List<GamesDto> read();

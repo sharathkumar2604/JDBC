@@ -32,7 +32,7 @@ public static void main(String[] args) {
 		service.save(running);
 		service.save(chess);
 		service.save(shettlecock);
-		
+		//
 		List<GamesDto> database = new ArrayList<GamesDto>();
 		System.out.println("------------Read method ---------");
 		for(GamesDto data  : service.read()) {
