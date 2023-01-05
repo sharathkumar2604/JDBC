@@ -4,23 +4,20 @@ public class InstituteDTO {
 
 	private String name;
 	private String location;
-	private int noOfTrainers;
-	private int noOfStudents;
 	private String course;
 	private int rating;
+	private int noOfStudents;
 	
-	InstituteDTO(){
-		
+	public InstituteDTO() {
 	}
 
-	public InstituteDTO(String name, String location, int noOfTrainers, int noOfStudents, String course, int rating) {
+	public InstituteDTO(String name, String location, String course, int rating, int noOfStudents) {
 		super();
 		this.name = name;
 		this.location = location;
-		this.noOfTrainers = noOfTrainers;
-		this.noOfStudents = noOfStudents;
 		this.course = course;
 		this.rating = rating;
+		this.noOfStudents = noOfStudents;
 	}
 
 	public String getName() {
@@ -39,22 +36,6 @@ public class InstituteDTO {
 		this.location = location;
 	}
 
-	public int getNoOfTrainers() {
-		return noOfTrainers;
-	}
-
-	public void setNoOfTrainers(int noOfTrainers) {
-		this.noOfTrainers = noOfTrainers;
-	}
-
-	public int getNoOfStudents() {
-		return noOfStudents;
-	}
-
-	public void setNoOfStudents(int noOfStudents) {
-		this.noOfStudents = noOfStudents;
-	}
-
 	public String getCourse() {
 		return course;
 	}
@@ -71,13 +52,24 @@ public class InstituteDTO {
 		this.rating = rating;
 	}
 
+	public int getNoOfStudents() {
+		return noOfStudents;
+	}
+
+	public void setNoOfStudents(int noOfStudents) {
+		this.noOfStudents = noOfStudents;
+	}
+
 	@Override
 	public String toString() {
-		return "InstituteDto [name=" + name + ", location=" + location + ", noOfTrainers=" + noOfTrainers
-				+ ", noOfStudents=" + noOfStudents + ", course=" + course + ", rating=" + rating + "]";
+		return "InstituteDTO [name=" + name + ", location=" + location + ", course=" + course + ", rating=" + rating
+				+ ", noOfStudents=" + noOfStudents + "]";
 	}
 	
 	
+	
+	
+	
+	
+	
 }
-
-
